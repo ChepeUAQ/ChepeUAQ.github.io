@@ -1,0 +1,161 @@
+:root {
+    --blue-d: rgb(37, 23, 73);
+    --blue: rgb(38, 49, 89);
+    --blue-l: rgb(73, 85, 121);
+    --white: rgb(255, 251, 235);
+
+    --navbar-h: 65px;
+}
+
+
+
+body {
+    margin: 0;
+    color: var(--white);
+    font-family: 'Martian mono', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+#navbar {
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--blue-d);
+    width: 100%;
+    height: var(--navbar-h);
+}
+
+#navbar a {
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+#navbar a:hover {
+    color: var(--blue-d);
+    background-color: var(--white);
+}
+
+
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    font-family: 'Rubik 80s Fade', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+#about {
+    background-color: var(--blue-l);
+    margin: 0 auto;
+    width: 80%;
+    padding: 25px;
+}
+
+#about img {
+    width: 300px;
+    border: solid var(--white) 2px;
+}
+
+
+
+#abilities {
+    margin: 0 auto;
+    width: 80%;
+    padding: 25px;
+    background-color: var(--blue);
+}
+
+.habd {
+    display: flex;
+    flex-direction: column;
+}
+
+.habd-sec {
+    padding: 20px 0px 20px 70px;
+}
+
+#abilities img {
+    max-width: 200px;
+}
+
+
+
+#projects {
+    background-color: var(--white);
+    width: 100%;
+    padding: 25px 0px;
+    color: var(--blue);
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#tiles {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: var(--blue-d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-tile img {
+    width: 300px;
+    max-width: 100%;
+    border: solid 3px var(--blue-d);
+}
+
+
+
+#contact {
+    background-color: var(--blue-l);
+    width: 100%;
+    padding: 25px 0px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: var(--white);
+    
+}
+
+#contact a img {
+    max-height: 20px;
+}
+
+@media (max-width: 680px) {
+    #tiles {
+        flex-direction: column;
+    }
+}
+
